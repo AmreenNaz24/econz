@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+body{
+font-size:1rem;
+font-family:"Lato";
+}
+/*=====================header===================*/
+.navbar {
+    padding: 10px 3%;
+    box-shadow: 0px 1px 5px 1px #eee;
+}
+.navbar-brand {
+    max-width: 180px;
+}
+.navbar-nav li {
+    display: inline;
+    padding: 0 3rem;
+}
+.navbar-nav a {
+    color: #333;
+}
+.navbar-nav li:hover a , .navbar-nav li:focus a, .navbar-nav li.active a {
+    color: #2788c1;
+	text-decoration:none;
+    font-weight: 700;
+}
+.navbar-toggler-icon {
+    background: #333;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.navbar-toggler {
+    width: 50px;
+    outline: none !important;
+}
+/*===========section=============*/
+.btn {
+    border-radius: 2px;
+	font-size:1rem;
+}
+.btn-default {
+    background-color: #2788c1;
+    color: #fff;
+}
+.btn-default:hover, .btn-default:focus{
+	color:#fff;
+}
+footer{
+background:url(../images/contact.jpeg) 0 0;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.form-control {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 1px;
+    padding: 10px 10px;
+}
+.form-control:focus{
+    background: transparent;
+	border:1px solid #fff;
+	outline:none !important;
+}
+.form-control::placeholder {
+	color:#fff;
+}
+
+.form {
+    border: 1px solid #fff;
+    padding: 5%;
+}
+.copyright {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 10pt;
+    background: #333;
+}
+.banner-text {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5%;
+    border: 6px double #fff;
+    margin: auto 20%;
+    text-shadow: 0px 1px 2px #c1c1c1;
+}
+.banner-img {
+    height: 450px;
+    object-fit: cover;
+    object-position: left;
+}
+.slideUp{
+    animation-name: SlideUp;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+.slideUp.come-in{
+    animation-name: SlideUp;
+}
+.slideUp.come-in:nth-child(n+2){
+	animation-delay:.3s;
+}
+
+@keyframes SlideUp{
+	0%{opacity:0;transform:translateY(80px);}
+	50%{opacity:0;}
+	100%{transform:translateY(0px);opacity:1;}
+}
+@-webkit-keyframes SlideUp{
+	0%{opacity:0;transform:translateY(80px);}
+	50%{opacity:0;}
+	100%{transform:translateY(0px);opacity:1;}
+}
+/*===============@media screen====*/
+@media screen and (max-width : 800px){
+	.navbar-nav li {
+		display: inline;
+		padding: 5px 0;
+		text-align: right;
+	}
+.h3, h3 {
+    font-size: 1.5rem;
+}
+.h5, h5 {
+    font-size: 1.1rem;
+}
+.mb-5, .my-5 {
+    margin-bottom: 0rem!important;
+}
+.mt-5, .my-5 {
+    margin-top: 0rem!important;
+}
+.banner-text {
+    margin: auto 10%;
+}
+ody {
+    font-size: 0.9rem;
+    font-family: "Lato";
+}
+}
+@media screen and (max-width:480px){
+.banner-text {
+    margin: auto 0%;
+}
+}
